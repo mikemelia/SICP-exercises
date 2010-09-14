@@ -1,0 +1,5 @@
+(define (absolute x)
+  (cond ((< x 0) (- x))
+        (else x)))
+(define (altabs x)
+  (if (< x 0) (- x) x))
