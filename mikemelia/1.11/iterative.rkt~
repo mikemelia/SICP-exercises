@@ -1,0 +1,7 @@
+(define (f n)
+  (f-iter 3 1 n))
+(define (f-iter total position n)
+  (cond ((< n 3) n)
+        (else (if (> (+ position 2) n) 
+                  total 
+                  (f-iter (* total 3) (+ position 1) n)))))  
